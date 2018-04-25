@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eleanor.coursescheduleforbentleystudent.CourseDetail"
+    android:columnCount="2"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/classdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class Detail"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:background="#3E70D4"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_columnSpan="2"/>
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Location: "
+        android:layout_margin="5dp"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Open School Map"
+        android:layout_margin="5dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/texttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:text="Time: "
+        android:textColor="#000" />
+
+
+    <TextView
+        android:id="@+id/due"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Due:"
+        android:layout_margin="5dp"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp" />
+
+
+    <TextView
+        android:id="@+id/instructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructor:"
+        android:layout_margin="5dp"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:id="@+id/assignmentinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="Assignment Notification"
+        android:textColor="#FF0000" />
+
+
+    <TextView
+        android:id="@+id/instructorinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher's Name"
+        android:layout_margin="5dp"
+        android:textColor="#000"
+        android:layout_marginRight="20dp" />
+    <Button
+        android:id="@+id/dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text=" Contact Professor "
+        android:layout_marginLeft="5dp"/>
+    <Button
+        android:id="@+id/emailprof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Professor"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"/>
+
+
+    <Button
+        android:id="@+id/assignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Assignment Page"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="5dp"/>
+
+
+</android.widget.GridLayout>

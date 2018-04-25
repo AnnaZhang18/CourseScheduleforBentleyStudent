@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eleanor.coursescheduleforbentleystudent.LogInActivity"
+    android:columnCount="3"
+    android:background="@drawable/background"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_columnSpan="3"
+        android:layout_margin="8dp"
+        android:text="Login to Class Schedule"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal"
+        android:hint="Email"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dp"/>
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="textWebPassword"
+        android:padding="8dp"
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"/>
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Remember me"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="Log In"
+        android:background="@drawable/loginbtn"
+        android:textColor="#FFF"/>
+
+</android.widget.GridLayout>
+

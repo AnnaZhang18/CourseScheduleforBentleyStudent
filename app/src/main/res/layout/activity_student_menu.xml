@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eleanor.coursescheduleforbentleystudent.StudentMenuActivity"
+    android:columnCount="3"
+    android:background="@drawable/background"
+    >
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_columnSpan="3"/>
+
+    <TextView
+        android:id="@+id/todayclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's Class"
+        android:textColor="#FFF"
+        android:background="#3E70D4"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_columnSpan="3"/>
+
+    <TextView
+        android:id="@+id/todaycourse"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Course \nNumber"
+        android:textColor="#000"
+        android:background="@drawable/listheader"
+        android:layout_marginLeft="5dp" />
+    <TextView
+        android:id="@+id/todaylocation"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Course Location"
+        android:textColor="#000"
+        android:background="#aaa" />
+    <TextView
+        android:id="@+id/todaytime"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Course \nTime"
+        android:textColor="#000"
+        android:background="#aaa"
+        android:layout_marginRight="5dp" />
+    <ListView
+        android:id="@+id/todaylistcourse"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        ></ListView>
+
+    <ListView
+        android:id="@+id/todaylistlocation"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        ></ListView>
+
+    <ListView
+        android:id="@+id/todaylisttime"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        ></ListView>
+</android.widget.GridLayout>
